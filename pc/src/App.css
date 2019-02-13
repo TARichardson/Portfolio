@@ -1,3 +1,8 @@
+@font-face {
+  font-family: ArchivoNarrow;
+  src: url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
+}
+
 .App {
   text-align: center;
 }
@@ -8,12 +13,30 @@ div>a{
 }
 .navContainer {
   display: flex;
-  background-color: #daebf3;
   height: 4em;
-  box-shadow: 1px 4px #382b38;
   grid-area: header;
   margin-top: 0px;
+  padding: 0px;
 
+
+}
+
+.navName {
+  flex: 5;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5em;
+  position: relative;
+  font-family: ArchivoNarrow;
+
+}
+
+.navName>a {
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+  position: relative;
+  top: 1em;
+  right: 7em;
 }
 
 .navLink {
@@ -21,19 +44,18 @@ div>a{
   list-style: none;
   text-decoration: none;
   font-size: 1.2em;
+
 }
 
 .navLink>a {
   text-decoration: none;
-  color: #5d5b5c;
-  box-shadow: 0px -4px #FA2C8A;
+  color: rgb(175, 175, 175);
   position: relative;
   top: 1.2em;
 }
 
 .navLink>a:hover {
-  box-shadow: 0px 4px #FA2C8A;
-  color: #2b121f;
+  color: rgb(75, 75, 75);
 }
 
 .navContainerF {
@@ -54,12 +76,38 @@ div>a{
 .navLinkF>a {
   text-decoration: none;
   color: #5d5b5c;
-  box-shadow: 0px 4px #FA2C8A;
   position: relative;
   top: 0.8em;
 }
 
 .navLinkF>a:hover {
-  box-shadow: 0px -4px #FA2C8A;
   color: #2b121f;
+}
+
+.imgDiv {
+}
+
+.imgDiv>img {
+  width: 20em;
+}
+
+.projectDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pjDiv {
+  flex: 1;
+  width: 50%;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.pjDiv>a>img {
+  width: 20em;
+}
+
+.pjDiv > p {
+  padding-left: 1em;
+  padding-right: 1em;
 }
